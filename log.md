@@ -24,3 +24,11 @@
 **Thoughts:** Again, not very much coding. At least not that's worth committing. Trying to integrate with Azure B2C has proven to be a nightmare. I'm going to switch to Auth0, because I've gotten it to work, and they serve my SPA + API needs well. I'll want to figure out how to use their library without using classes if I can help it. Would like to keep all the entities functional. I need to really try to do some actual committable code in the near future. I just feel like there's so much (non-code) set-up I want to do if I don't want to re-write everything. At least getting an authentication scheme and database set up.
 
 **Link to work:** [Vue Parenting App](https://github.com/Basaingeal/parenting-app-client)
+
+### Day 3: January 4, 2019 
+
+**Today's Progress**: Added a service to handle callbacks from the auth0 service
+
+**Thoughts:** I'm looking at the guide for setting up authentication using auth0 and vue. I have a lot of disagreements with the implementation. It ends up making sense, but it's having me pass around the auth service as a prop. It turns the auth service into a state holder with a way to check the auth status on reload. But I don't want to pass around a service as a prop. To me it makes more sense to store auth info in an actual state management system. I should probably stop following guides, learn the auth0-js library and start trying to implement it myself. I keep getting hung up on little issues too. Like whether to use classes, constructor function object, or factory sunctions. Going with a simple factory function now. Tomorrow is Saturday, which will be nice, because I think there 1 hour increments are tough to settle into for solid stretches of work. Should maybe taker a break form auth for a while and just start working on a component, but it's hard for me to do that before I know exactly how auth, data storage, and routing will work.
+
+**Link to work:** [Vue Parenting App](https://github.com/Basaingeal/parenting-app-client)

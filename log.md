@@ -40,3 +40,27 @@
 **Thoughts:** I'm really happy with this implementation. The important stuff if stored in local storage so it persists through page reloads. I want to seperate logout logic between the app just forgetting about you, and actively loging out from auth0. Will probably only do the full log out if they hit log out, and will just forget about them on timeout. Timeout might be a week or two though. It's not a banking app after all. Connecting the login to google was easy but parts of it were unintuitive. Google has a customizable consent screen per project, so I'd want to use a different client id for a different app on auth0, but the third party connections seem to be global instead of application scoped. Tomorrow I'll try to set up the API backend and get that authorized too.
 
 **Link to work:** [Vue Parenting App](https://github.com/Basaingeal/parenting-app-client)
+
+### Day 5: January 6, 2019 
+
+**Today's Progress**: Grab user profile and store it. Also add API to the authentication audience.
+
+**Thoughts:** At this point, I'm happy with adding and loging in users. At least the oauth process. I will probably be revamping log-in and welcome screens in the near future. Might do it over a CORS request instead of dirrecting them out of the app. The main thing I'm concerned about is how to represent the user in the database. I feel like I should store the user so that I can join tables to them, but that also might be unnecessary, and all I have to do is reference them by Id. I'll probably need some kind of user profile table at least, so maybe that will fulfil both needs.
+
+**Links to work:** [Vue Parenting App](https://github.com/Basaingeal/parenting-app-client) / [Vue Parenting Backend](https://github.com/Basaingeal/parenting-app-api)
+
+### Day 6: January 7, 2019 
+
+**Today's Progress**: Set up CI/CD on Azure Devops for the client and the api
+
+**Thoughts:** No coding, (I know, I flubbing it a bit, but I can only spend a few hours a day, and there's more to learn than just code.) but I hooked up my Github repos to a CI/CD pipeline on Azure Devops. The api goes to an Azure app service, and the client goes to a $web container in Azure storage. I feel like I really learned a lot about how pipelines work. So much that I feel like I could even set one up at work if I wanted to. The main things that I'm still a bit loose on are how pull-requests factor into thing, how to set up a build-success badge on the readme, when to CD after a CI and when not to, and also where all the variables fit in. Very happy with it though, and it's nice to just commit and access the live sites.
+
+**Links to work:** [Vue Parenting App](https://github.com/Basaingeal/parenting-app-client) / [Vue Parenting Backend](https://github.com/Basaingeal/parenting-app-api)
+
+### Day 7: January 8, 2019 
+
+**Today's Progress**: Break for time with family.
+
+**Thoughts:** Worked 2+ hours yesterday, and wanted to spend some time with the family.
+
+**Links to work:** [Vue Parenting App](https://github.com/Basaingeal/parenting-app-client) / [Vue Parenting Backend](https://github.com/Basaingeal/parenting-app-api)
